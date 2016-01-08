@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The functions demonstrate caching a variable using R environments
+## See further info below
 
-## Write a short comment describing this function
+## Creates a special matrix object that allows caching the inverse once its calculated. x param is a matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -19,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Given a special matrix created with makeCacheMatrix, calculates the inverse if it has not already been calculated
+## Assumes invesrse of matrix can be calculated.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
